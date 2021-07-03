@@ -187,4 +187,10 @@ var Addons = []*Addon{
 		validations: []setFn{IsVolumesnapshotsEnabled},
 		callbacks:   []setFn{EnableOrDisableAddon, verifyAddonStatus},
 	},
+	{
+		name:      "portainer",
+		set:       SetBool,
+		callbacks: []setFn{EnableOrDisableAddon},
+	},
+
 }
