@@ -132,8 +132,7 @@ var (
 	//go:embed csi-hostpath-driver/deploy/*.tmpl csi-hostpath-driver/rbac/*.tmpl
 	CsiHostpathDriverAssets embed.FS
 
-	// portainerAssets assets for portainer addon
+	// PortainerAssets assets for portainer addon
 	//go:embed portainer/portainer.yaml.tmpl
 	PortainerAssets embed.FS
-
 )

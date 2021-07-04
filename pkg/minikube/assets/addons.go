@@ -667,12 +667,12 @@ var Addons = map[string]*Addon{
 		"Provisioner":           "k8s.gcr.io",
 	}),
 	"portainer": NewAddon([]*BinAsset{
-                MustBinAsset(addons.PortainerAssets,
-                        "portainer/portainer.yaml.tmpl",
-		        vmpath.GuestAddonsDir,
-	                "portainer.yaml",
-		        "0640"),
-        }, false, "portainer", "", nil, nil),
+		MustBinAsset(addons.PortainerAssets,
+			"portainer/portainer.yaml.tmpl",
+			vmpath.GuestAddonsDir,
+			"portainer.yaml",
+			"0640"),
+	}, false, "portainer", "", nil, nil),
 }
 
 // parseMapString creates a map based on `str` which is encoded as <key1>=<value1>,<key2>=<value2>,...

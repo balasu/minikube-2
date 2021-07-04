@@ -192,5 +192,4 @@ var Addons = []*Addon{
 		set:       SetBool,
 		callbacks: []setFn{EnableOrDisableAddon},
 	},
-
 }
